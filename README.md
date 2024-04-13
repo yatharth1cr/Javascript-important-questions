@@ -1,5 +1,5 @@
 ## Javascript-important-questions 
-# 1. What is the difference between synchronous and asynchronous code? Explain with an example.
+## 1. What is the difference between synchronous and asynchronous code? Explain with an example.
 
 #### ANSWER:-)
 
@@ -26,7 +26,7 @@ console.log("End");
 
 ---
 
-# 2. What is the use case of call stack?
+## 2. What is the use case of call stack?
 
 #### ANSWER:-)
 
@@ -34,20 +34,20 @@ console.log("End");
 
 ---
 
-# 3. What is API? Give example of some web browser APIs.
+## 3. What is API? Give example of some web browser APIs.
 
 #### ANSWER:-)
 
 - Application programming Interface(API) is a set of tool for building software and apps.
 - Web browser APIs like the DOM (Document Object Model) API for manipulating web pages and the Geolocation API for getting a user's location.
 
-# 4. What does single thread mean?
+## 4. What does single thread mean?
 
 #### ANSWER:-)
 
 - single thread means that at one point of time single line of code are running.
 
-# 5. What are some of the limitations and advantages of single threaded programming language?
+## 5. What are some of the limitations and advantages of single threaded programming language?
 
 #### ANSWER:-)
 
@@ -67,11 +67,48 @@ console.log("End");
 
 ---
 
-# 6. Why call stack is a stack kind of data structure?
+## 6. Why call stack is a stack kind of data structure?
 
-#### ANSWER:-)`
+#### ANSWER:-)
 
 ```js
 - The call stack follows the Last-In, First-Out (LIFO) principle,meaning the last function called is the first one to finish.
 - This structure helps manage function calls and returns in an organized way.
+```
+
+## 7. What is the use case of event loop?
+
+#### Answer:-)
+
+```js
+- Event loop is basically use to take function from callback queue and handover to callstack for execution.
+- it is always taking care of callstack's status that it is empty or not.
+- when the callstack will empty it will push the waiting function from callback queue to callstack for execution.
+```
+
+## 8. What gets stored in callback queue?
+
+#### Answer:-)
+
+```js
+callback queue takes callback from web browser API which marked as completed and store it until code gets executed in callstack.
+```
+
+## 9. Write two examples of how you can make network request using XMLHttpRequest
+
+#### Answer:-)
+
+```js
+we can make network request using XMLHttpRequest with their method GET,PUT,DELETE & POST
+example:-)
+let xhr = new XMLHttpRequest()
+- xhr.open("GET","URL") 
+- xhr.open("POST","URL")
+```
+
+## 10. What are the different ways to call function once data is loaded?
+
+#### Answer:-)
+
+```js
 ```
